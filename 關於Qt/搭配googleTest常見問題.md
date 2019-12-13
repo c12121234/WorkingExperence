@@ -25,4 +25,22 @@
 
 ![image](https://github.com/c12121234/WorkingExperence/blob/master/%E9%97%9C%E6%96%BCQt/pic/googleTestMixQtProblem3.png)
 
-查了資料，應該是要用gMock模擬出 有空再搞。先workaround吧。
+~~查了資料，應該是要用gMock模擬出 有空再搞。先workaround吧~~
+
+找到解決方法了！ 以圖片的ChessBoard來舉例
+
+我們要先找到moc_chessbard.cpp這個檔案，裡面有關於QOBJECT展開後的東西
+
+把這檔案加入 sources來源就行了。
+
+![image](https://github.com/c12121234/WorkingExperence/blob/master/%E9%97%9C%E6%96%BCQt/pic/googleTestMixQtProblem5.png)
+
+## 2. 將待測專案(檔案)和測試專案連結
+
+一樣，把待測檔案加入到SOURCES 表頭檔就加到HEADERS 路徑就加到INCLUDEPATH
+
+路徑的表現方式留意，如 ../ 代表往上一層 
+
+![image](https://github.com/c12121234/WorkingExperence/blob/master/%E9%97%9C%E6%96%BCQt/pic/googleTestMixQtProblem6.png)
+
+紅線部分都自行加入的
