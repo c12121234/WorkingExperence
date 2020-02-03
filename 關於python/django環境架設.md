@@ -9,7 +9,9 @@
 *4.* 安裝python venv虛擬環境，先創建一資料夾，並cd移動到該資料夾。輸入cmd指令[python -m venv 你的venv名稱] 
 ![image](https://github.com/c12121234/WorkingExperence/blob/master/%E9%97%9C%E6%96%BCpython/pic/django%E5%AE%89%E8%A3%9D%E6%B5%81%E7%A8%8B01.PNG)
 
-*5.* 啟動venv 指令[py 你的venv名稱/Scripts/activate]
+*5.* 啟動venv 指令[你的venv名稱\Scripts\activate]
+
+*5.5.* 退出環境 deactivate
 
 *6.* 在venv環境安裝django 指令[py -m pip install django] 會自動安裝最新版本
 
