@@ -7,7 +7,7 @@
 *3.* 安裝python pip-->cmd指令 **[curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py]** 安裝完後 指令[python get-pip.py]
 
 *4.* 安裝python venv虛擬環境，先創建一資料夾，並cd移動到該資料夾。輸入cmd指令[python -m venv 你的venv名稱] 
-[圖片1]
+![image](https://github.com/c12121234/WorkingExperence/blob/master/%E9%97%9C%E6%96%BCpython/pic/django%E5%AE%89%E8%A3%9D%E6%B5%81%E7%A8%8B01.PNG)
 
 *5.* 啟動venv 指令[py 你的venv名稱/Scripts/activate]
 
