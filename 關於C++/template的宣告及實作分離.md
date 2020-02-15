@@ -133,4 +133,4 @@ template long OutPut<long>::DoOutPut(void);
 寫出這兩行 long使用到的ctor和function即可
 
 ## 輸出
-![img](picture)
+![img](https://github.com/c12121234/WorkingExperence/blob/master/%E9%97%9C%E6%96%BCC%2B%2B/pic/cplusplus_template_1.png)
