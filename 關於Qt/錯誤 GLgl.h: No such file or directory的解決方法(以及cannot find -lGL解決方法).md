@@ -23,3 +23,9 @@ QtCreator第一次編譯時，報錯GL/gl.h: No such file or directory
 #### 參考資料：
 
 https://blog.csdn.net/u010168781/article/details/80896797
+
+[20200326] 
+
+又碰到問題...
+
+https://blog.csdn.net/songrotek/article/details/48023461
