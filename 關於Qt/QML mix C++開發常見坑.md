@@ -26,6 +26,8 @@ signals:
 
 而且assign給QML的變數，也一定要使用`varData`才能有效接到
 
+還有，傳的參數要使用QVariant的type 很多阿雜的坑阿...
+
 
 
 
