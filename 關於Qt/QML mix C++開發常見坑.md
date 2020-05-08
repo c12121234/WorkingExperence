@@ -28,7 +28,10 @@ signals:
 
 還有，傳的參數要使用QVariant的type 很多阿雜的坑阿...
 
+使用`qmlRegisterType<type>()`函式時，記得最後QML使用的type類型，首字母要大寫
 
+ex:qmlRegisterType<Utility>("myUtility",0,1,"MyUtil");
+    
 
 
 
