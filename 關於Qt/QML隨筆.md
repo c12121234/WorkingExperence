@@ -118,3 +118,8 @@ Column
 ![img](https://github.com/c12121234/WorkingExperence/blob/master/pic/qmlQProperty/QProperty002.png)
 
 
+#### ================= 4.  Calling c++ from QML : `SetContextObject`
+
+和setContextProperty()很像 我目前還不知道差在哪...
+
+`engine->rootContext()->setContextObject(&obj);`
