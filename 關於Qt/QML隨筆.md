@@ -45,3 +45,69 @@ engine->rootContext()->SetContextProperty("在QML中使用的Type",&myModel);
 ![img](https://github.com/c12121234/WorkingExperence/blob/master/pic/qmlConnections/Connections002.png)
 
 
+#### ================= 3.  Calling c++ from QML : `Q_PROPERTY`
+
+利用`Q_PROPERTY`的MACRO來將c++ module內的成員可被QML使用、改寫
+
+https://doc.qt.io/qt-5/properties.html
+
+常用的屬性有`READ` `WRITE` `NOTIFY` 當然有更多，請看上方連結
+
+QML區塊：
+
+```
+Column
+    {
+        anchors.centerIn: parent
+        spacing: 5
+        Label
+        {
+            id:mlblMovie
+            anchors.horizontalCenter: parent.horizontalCenter
+            font.pixelSize: 25
+            text:Movie.title
+        }
+
+        Label
+        {
+            id:mlblMainCharacter
+            anchors.horizontalCenter: parent.horizontalCenter
+            font.pixelSize: 25
+            text:Movie.mainCharacter
+        }
+
+
+        Row
+        {
+            spacing: 5
+            TextField
+            {
+                id:txtTitle
+            }
+
+            Button
+            {
+                id:btnTitle
+                text: "setting title"
+                onClicked: Movie.title = txtTitle.text
+            }
+        }
+
+        Row
+        {
+            spacing: 5
+            TextField
+            {
+                id:txtCharacter
+            }
+
+            Button
+            {
+                id:btnCharacter
+                text: "setting MainCharacter"
+                onClicked: Movie.mainCharacter = txtCharacter.text
+            }
+        }
+    }
+```
+
