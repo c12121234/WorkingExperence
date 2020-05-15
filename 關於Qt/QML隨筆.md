@@ -123,3 +123,29 @@ Column
 和setContextProperty()很像 我目前還不知道差在哪...
 
 `engine->rootContext()->setContextObject(&obj);`
+
+#### ================= 5.  Calling jsFunction from c++ : 
+
+```cpp
+void JSFunctionCaller::callJSMethod(QString param)
+{
+    QVariant returnValue;
+    QVariant cppParameter = QVariant::fromValue(param);
+
+    QMetaObject::invokeMethod(m_pQMLRootObject,"qmlJSFunction",
+                              Q_RETURN_ARG(QVariant,returnValue),
+                              Q_ARG(QVariant,cppParameter));
+    qDebug()<<"c++ talking,done call QML javascript,the return value is"<<returnValue.toString();
+}
+```
+在cpp中呼叫js function的流程:
+
+將QML的rootobject接收起來，可使用`engine->rootObjects().first()`或`engine->rootObjects()[0]`
+(因此 js function要寫在root元件內)
+
+1. 使用`QVariant`來接收 js function的return值以及參數
+
+2. 使用`QMetaObject::invokeMethod`來映射js function的結構 return值使用`Q_RETURN_ARG` 參數使用`Q_ARG` 並且使用`QVariant`外裹一層
+
+
+
