@@ -111,3 +111,10 @@ Column
     }
 ```
 
+![img](https://github.com/c12121234/WorkingExperence/blob/master/pic/qmlQProperty/QProperty001.png)
+
+圖內的title和mainCharacter就是被設定為movie的property 可在QML中呼叫
+
+![img](https://github.com/c12121234/WorkingExperence/blob/master/pic/qmlQProperty/QProperty002.png)
+
+
