@@ -30,7 +30,9 @@ engine->rootContext()->SetContextProperty("在QML中使用的Type",&myModel);
 
 #### ================= 2. QML Connections type用法：
 
-一種可將connect 不一定寫在child內的寫法
+~~一種可將connect 不一定寫在child內的寫法~~
+
+主要目的是要接收c++ module內的signal 能在QML中使用，見第二張圖
 
 ![img](https://github.com/c12121234/WorkingExperence/blob/master/pic/qmlConnections/Connections001.png)
 
@@ -39,4 +41,7 @@ engine->rootContext()->SetContextProperty("在QML中使用的Type",&myModel);
 在QML中，signal前面+`on` 就有隱含連接signal slot 的意思了 所以在button中直接寫`onClicked`
 
 就已經將接收click signal 並執行相對應的slot這行為表現出來了
+
+![img](https://github.com/c12121234/WorkingExperence/blob/master/pic/qmlConnections/Connections002.png)
+
 
