@@ -148,4 +148,41 @@ void JSFunctionCaller::callJSMethod(QString param)
 2. 使用`QMetaObject::invokeMethod`來映射js function的結構 return值使用`Q_RETURN_ARG` 參數使用`Q_ARG` 並且使用`QVariant`外裹一層
 
 
+#### ================= 6.  qmlRegisterUncreatableType : 
+
+用在不能實體化的class，當想要引用到qml中使用時
+
+如某 pure virtual base class，想用此class來描述容器內的type的行為時，就可使用
+
+(多型的運用)
+
+```cpp
+//player.h
+
+Q_INVOKABLE virtual void play() =0;
+```
+
+```cpp
+//main.cpp
+//Register Types
+
+qmlRegisterUncreatableType<Player>("com.blikoon.Football", 1,0, "Player",
+                                       "Can not create Player in QML.Not allowed.");
+
+    qmlRegisterType<Striker>("com.blikoon.Football", 1,0, "Striker");
+    qmlRegisterType<Defender>("com.blikoon.Football", 1,0, "Defender");
+    qmlRegisterType<FootBallTeam>("com.blikoon.Football", 1,0, "FootBallTeam");
+```
+
+```
+//main.qml
+Component.onCompleted: {
+        console.log("We have :" + team2.players.length + " players in the team "+ team2.title)
+        for(var i = 0; i<team2.players.length;++i)
+        {
+            team2.players[i].play()
+        }
+    }
+}
+```
 
