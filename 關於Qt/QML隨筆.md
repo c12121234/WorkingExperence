@@ -186,3 +186,84 @@ Component.onCompleted: {
 }
 ```
 
+#### ================= 7.  Q_CLASSINFO  Default Property: 
+
+很難說明 大略使用方式是`Q_CLASSINFO("DefaultProperty","屬性名")`
+
+而可以在QML中預設使用這個屬性(新建type時就是預設這屬性)
+
+```
+FootBallTeam {
+        id : team1
+        title: "Rayon Sports"
+        coatch: "Coatch Name"
+        captain: Striker{
+            name: "Captain"
+            position: "Middle Field"
+            playing: true
+        }
+
+        players: [
+
+            Defender{
+                name: "Player1"
+                position: "Middle Field"
+                playing: true
+            },
+            Striker{
+                name: "Player2"
+                position: "Middle Field"
+                playing: true
+            },
+            Defender{
+                name: "Player3"
+                position: "Middle Field"
+                playing: true
+            },
+            Striker{
+                name : "Daniel"
+                position: "None"
+                playing: false
+            }
+
+
+
+        ]
+    }
+
+    FootBallTeam {
+        id : team2
+        title: "APR"
+        coatch: "Coatch Name"
+        captain: Striker{
+            name: "Captain"
+            position: "Middle Field"
+            playing: true
+        }
+
+        Defender{
+            name: "Player4"
+            position: "Middle Field"
+            playing: true
+        }
+        Striker{
+            name: "Player5"
+            position: "Middle Field"
+            playing: true
+        }
+        Defender{
+            name: "Player6"
+            position: "Middle Field"
+            playing: true
+        }
+        Striker{
+            name : "Daniel2"
+            position: "None"
+            playing: false
+        }
+    }
+```
+
+team1是原本用法，可看到設定了players這屬性
+
+team2則不需要，就差在這。
