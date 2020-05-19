@@ -267,3 +267,70 @@ FootBallTeam {
 team1是原本用法，可看到設定了players這屬性
 
 team2則不需要，就差在這。
+
+#### ================= 8.  物件的focus屬性: 
+
+若想要捕捉鍵盤的pressed和release signal
+
+則該物件的focus必須設為true
+
+```cpp
+Column
+    {
+        anchors.centerIn: parent
+        spacing: 5
+        focus: true
+        Keys.onPressed:
+        {
+            switch(event.key)
+            {
+            case Qt.Key_0:
+                console.log("0")
+                mPressNum0.border.color = "red"
+                break
+            case Qt.Key_1:
+                console.log("1")
+                mPressNum1.border.color = "red"
+                break
+            case Qt.Key_2:
+                console.log("2")
+                mPressNum2.border.color = "red"
+                break
+            case Qt.Key_3:
+                console.log("3")
+                mPressNum3.border.color = "red"
+                break
+            case Qt.Key_4:
+                console.log("4")
+                mPressNum4.border.color = "red"
+                break
+            case Qt.Key_5:
+                console.log("5")
+                mPressNum5.border.color = "red"
+                break
+            case Qt.Key_6:
+                console.log("6")
+                mPressNum6.border.color = "red"
+                break
+            case Qt.Key_7:
+                console.log("7")
+                mPressNum7.border.color = "red"
+                break
+            case Qt.Key_8:
+                console.log("8")
+                mPressNum8.border.color = "red"
+                break
+            case Qt.Key_9:
+                console.log("9")
+                mPressNum9.border.color = "red"
+                break
+            default:
+                break
+            }
+        }
+```
+
+注意onPressed這slot，它接收一個event
+
+所以可在onPressed內部使用event
+
