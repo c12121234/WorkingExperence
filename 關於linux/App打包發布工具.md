@@ -37,6 +37,10 @@ qmake路徑: /home/desktop-tom/newQt/5.14.2/gcc_64/bin/qmake
 
 `linuxdeployqt路徑  source路徑  -qmake=qmake路徑 -unsupported-allow-new-glibc`
 
+**若使用qml 則必須增加 -qmldir=path的路徑 path為你的專案資料夾**
+
+**linuxdeployqt路徑  source路徑  -qmldir=path -qmake=qmake路徑 -unsupported-allow-new-glibc**
+
  -unsupported-allow-new-glibc 這指令是為了修正18.04版後的問題 詳見連結：https://github.com/probonopd/linuxdeployqt/issues/340
  
  好了後會在你的source路徑下跑出很多檔案 如下
