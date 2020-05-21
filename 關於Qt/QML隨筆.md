@@ -338,3 +338,11 @@ Column
 
 則必須在onPressed內部設定 `event.accepted = false`
 
+#### ================= 9.  重疊的mouseArea之滑鼠事件傳遞: 
+
+在QML中，物件順序是程式碼越下方的越晚create，若兩塊mouseArea重疊
+
+則晚create的會在上方覆蓋下方的mouseArea。因此若要讓滑鼠事件"**穿透**"到下方的mouseArea的話
+
+則必須設定`propagateComposedEvents: true` 而且較上層的滑鼠事件也必須設定 `mouse.accepted = false`
+
