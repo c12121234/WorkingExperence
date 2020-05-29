@@ -358,3 +358,25 @@ https://stackoverflow.com/questions/54832502/destroy-from-column-children-does-n
 
 下斷點看問題，當時的情境似乎得等到物件"**消失**"後才會從children列表中刪除
 
+#### ================= 11.  動態建立QML物件: 
+
+貼一段我的code
+
+```javascript
+function createCustomRect()
+    {
+        var name = "customRectId"+itemCount
+        console.log(name)
+        var tempRect = Qt.createComponent("CustomRect.qml")
+        var object = tempRect.createObject(root,{objectName:name,targetItem:testzoneLayout,dragKey:dragKeys,itemText:itemCount})
+        object.sendRectangleId.connect(testzone.handleSendId)
+    }
+```
+
+核心function 是 [Qt.createComponent](https://doc.qt.io/qt-5/qml-qtqml-qt.html#createComponent-method)以及[createObject](https://doc.qt.io/qt-5/qml-qtqml-component.html#createObject-method)
+
+詳細文章連結:
+
+https://doc.qt.io/qt-5/qtqml-javascript-dynamicobjectcreation.html
+
+
