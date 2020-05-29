@@ -346,3 +346,15 @@ Column
 
 則必須設定`propagateComposedEvents: true` 而且較上層的滑鼠事件也必須設定 `mouse.accepted = false`
 
+#### ================= 10.  destroy() item無法立即更新到children列表中: 
+
+stackoverflow上也有人提過這問題了
+
+https://stackoverflow.com/questions/54832502/destroy-from-column-children-does-not-remove-it-from-children-in-qml
+
+自己是在做須要依item child數目做變化時發現這問題
+
+目前看來無解 只能做些workaround
+
+下斷點看問題，當時的情境似乎得等到物件"**消失**"後才會從children列表中刪除
+
