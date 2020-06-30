@@ -29,3 +29,7 @@ https://blog.csdn.net/u010168781/article/details/80896797
 又碰到問題...
 
 https://blog.csdn.net/songrotek/article/details/48023461
+
+[20200630]
+
+補充:*安裝完Qt creator後還必須安裝g++和cmake*
