@@ -380,3 +380,6 @@ function createCustomRect()
 https://doc.qt.io/qt-5/qtqml-javascript-dynamicobjectcreation.html
 
 
+####  ================= 12.  取得listmodel內正在取得的index:
+
+`currentIndex`
