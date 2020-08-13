@@ -383,3 +383,32 @@ https://doc.qt.io/qt-5/qtqml-javascript-dynamicobjectcreation.html
 ####  ================= 12.  取得listmodel內正在取得的index:
 
 `currentIndex`
+
+####  ================= 13.  取得repeater內的元素:
+
+`reapterId.itemAt(index).屬性`
+
+####  ================= 14.  傳出封裝物件Component內的各元素id:
+
+舉例來說：
+
+```qml
+Component
+{
+    id:comId
+    
+    Rectangle
+    {
+        id:rectId
+        //......
+        
+    }
+}
+```
+我們可以在rectId內宣告signal，在某種條件下(mouse click或各種user行為，或ComponentComplete等等...)
+
+將rectId當作signal內的參數傳出即可獲得Component內的id
+
+若想再做rectId child項的操作，則把子項的id設定成rectId的property即可
+
+
