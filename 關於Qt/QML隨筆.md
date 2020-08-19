@@ -424,3 +424,10 @@ MouseArea的屬性要增加 **acceptedButtons: Qt.LeftButton | Qt.RightButton**
 
 最後在trigger內增加`mouse.button == Qt.LeftButton`或 `mouse.button == Qt.RightButton`
 
+####  ================= 17.  在javascript下的綁定(動態綁定):
+
+```QML
+Width = Qt.binding(function() { return parent.width; } )
+```
+
+可以看出binding內要傳入一個function，把想要的行為丟進去就可以了。
