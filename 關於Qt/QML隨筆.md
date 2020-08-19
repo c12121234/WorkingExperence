@@ -412,3 +412,15 @@ Component
 若想再做rectId child項的操作，則把子項的id設定成rectId的property即可
 
 
+####  ================= 15.  透過model來取得item:
+
+若view類內有`currentIndex`或`currentItem`的屬性，可以利用user操作來令currentIndex = index
+
+再使用currentItem來拿到該物件
+
+####  ================= 16.  分辨mouse click的行為是左鍵還右鍵:
+
+MouseArea的屬性要增加 **acceptedButtons: Qt.LeftButton | Qt.RightButton**
+
+最後在trigger內增加`mouse.button == Qt.LeftButton`或 `mouse.button == Qt.RightButton`
+
