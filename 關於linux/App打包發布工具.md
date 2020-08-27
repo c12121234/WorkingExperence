@@ -62,7 +62,9 @@ qmake路徑: /home/desktop-tom/newQt/5.14.2/gcc_64/bin/qmake
  打包完成，打包完後的檔案會產出在AppImage路徑下 對你的執行檔下ldd 無動態連結 yes
  
  
-**ldd 若有動態連結庫找不到的情況，則 export LD_LIBRARY_PATH=/Path/To/Lib:$LD_LIBRARY_PATH
+**ldd 若有動態連結庫找不到的情況，則 export LD_LIBRARY_PATH=/Path/To/Lib:$LD_LIBRARY_PATH然後再次執行ldd確定即可.**
 
-然後再次執行ldd確定即可.**
+
+
+
 
