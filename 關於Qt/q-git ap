@@ -1,0 +1,4 @@
+https://www.howtoinstall.me/ubuntu/18-04/qgit/
+
+sudo apt update
+sudo apt install qgit
