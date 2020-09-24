@@ -35,3 +35,5 @@ https://blog.csdn.net/foruok/article/details/32698603 **Qt Quick 之QML 與C++ �
 
 https://blog.csdn.net/foruok/article/details/30474299 **Qt Quick事件處理之鼠標、鍵盤、定時器**
 
+https://www.slideshare.net/jackyang5000/qml-c-44081264 **QML mix c++**
+
