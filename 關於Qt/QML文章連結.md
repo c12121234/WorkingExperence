@@ -38,3 +38,5 @@ https://blog.csdn.net/foruok/article/details/30474299 **Qt Quick事件處理之�
 https://www.slideshare.net/jackyang5000/qml-c-44081264 **QML mix c++**
 
 https://www.devbean.net/2013/11/qt-study-road-2-ipc/ **Qt IPC**
+
+https://blog.csdn.net/mickeyty/article/details/51721860 **IPC**
