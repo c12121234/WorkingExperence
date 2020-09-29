@@ -2,7 +2,7 @@
 
 https://blog.csdn.net/liuhongwei123888/article/details/6549825 **Loader使用**
 
-https://blog.csdn.net/zhushentian/article/details/81279196 **QML scence graph **
+https://blog.csdn.net/zhushentian/article/details/81279196 **QML scence graph**
 
 https://blog.csdn.net/gamesdev/article/details/37359873 **QML c++交互**
 
@@ -37,3 +37,4 @@ https://blog.csdn.net/foruok/article/details/30474299 **Qt Quick事件處理之�
 
 https://www.slideshare.net/jackyang5000/qml-c-44081264 **QML mix c++**
 
+https://www.devbean.net/2013/11/qt-study-road-2-ipc/ **Qt IPC**
