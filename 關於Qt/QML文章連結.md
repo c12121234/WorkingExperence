@@ -40,3 +40,7 @@ https://www.slideshare.net/jackyang5000/qml-c-44081264 **QML mix c++**
 https://www.devbean.net/2013/11/qt-study-road-2-ipc/ **Qt IPC**
 
 https://blog.csdn.net/mickeyty/article/details/51721860 **IPC**
+
+https://www.twblogs.net/a/5c91aa62bd9eee35fc158342 **QML 使用Qt.rgba調整顏色及透明度**
+
+
