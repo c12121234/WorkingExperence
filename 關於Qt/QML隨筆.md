@@ -373,6 +373,13 @@ function createCustomRect()
     }
 ```
 
+另一種方式
+```qml
+var newObject = Qt.createQmlObject('import QtQuick 2.0; Rectangle {color: "red"; width: 20; height: 20}',
+                                   parentItem,
+                                   "dynamicSnippet1");
+```
+
 核心function 是 [Qt.createComponent](https://doc.qt.io/qt-5/qml-qtqml-qt.html#createComponent-method)以及[createObject](https://doc.qt.io/qt-5/qml-qtqml-component.html#createObject-method)
 
 詳細文章連結:
