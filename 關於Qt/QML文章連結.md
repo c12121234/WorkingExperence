@@ -43,4 +43,6 @@ https://blog.csdn.net/mickeyty/article/details/51721860 **IPC**
 
 https://www.twblogs.net/a/5c91aa62bd9eee35fc158342 **QML 使用Qt.rgba調整顏色及透明度**
 
+https://blog.csdn.net/gongjianbo1992/article/details/103639353 **對item type截圖**
+
 
