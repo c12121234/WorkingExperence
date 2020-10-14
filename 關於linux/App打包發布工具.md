@@ -65,6 +65,9 @@ qmake路徑: /home/desktop-tom/newQt/5.14.2/gcc_64/bin/qmake
 **ldd 若有動態連結庫找不到的情況，則 export LD_LIBRARY_PATH=/Path/To/Lib:$LD_LIBRARY_PATH然後再次執行ldd確定即可.**
 
 
+新增:QML在windows下的打包
+
+https://blog.csdn.net/baidu_33850454/article/details/88597740
 
 
 
