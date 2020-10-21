@@ -438,3 +438,11 @@ Width = Qt.binding(function() { return parent.width; } )
 ```
 
 可以看出binding內要傳入一個function，把想要的行為丟進去就可以了。
+
+####  ================= 18.  tableView的header和資料無法對齊的解決辦法:
+
+QtQuick2.0的TableView由於要自定義header樣式，常會有資料無法對齊的狀況
+
+解決辦法可以使用forceLayout搭配Timer來更新表格
+
+
