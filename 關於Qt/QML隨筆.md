@@ -445,4 +445,20 @@ QtQuick2.0的TableView由於要自定義header樣式，常會有資料無法對�
 
 解決辦法可以使用forceLayout搭配Timer來更新表格
 
+#### ================= 19.  TabBar的長度造成flickable效果消失的解決辦法:
+
+TabBar的一項功能是，當tabBar超出顯示範圍時，可以向右滑動來顯示下一個項目
+
+在document中稱其為flickable
+
+但要讓flickable作動，width似乎要綁定parent
+
+我在未綁定的狀況下是無法啟動flickable的
+
+原因可能是，在綁定時width會是**0** <== ya 你沒看錯
+
+未綁定則會根據你的tabBar數量來決定寬度
+
+當寬度有值時，似乎無法判斷該從哪裡開始捲動tabBar
+
 
