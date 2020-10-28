@@ -18,7 +18,7 @@ https://github.com/AppImage/AppImageKit
 
 將兩個檔案都改成可執行
 
-將你專案build好的binary檔隨便移到某乾淨資料夾 稱為`source路徑`
+將你專案build好的binary檔隨便移到某乾淨資料夾 稱為`source路徑`+ binary檔的名稱
 
 AppImage的執行檔稱為`AppImage路徑`
 
