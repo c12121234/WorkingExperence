@@ -1,5 +1,13 @@
 # 應用程式打包發布工具
 
+20201106 更新:
+
+都在下面連結了
+
+https://www.bilibili.com/s/video/BV1aK4y1v7fq
+
+=======================================
+
 由於開發QT應用程式
 
 使用兩套第三方套件 AppImage 以及linuxdeployqt
