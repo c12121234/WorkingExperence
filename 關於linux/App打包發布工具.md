@@ -6,6 +6,10 @@
 
 https://www.bilibili.com/s/video/BV1aK4y1v7fq
 
+參考連結
+
+https://blog.csdn.net/weixin_30548917/article/details/98513031#t1
+
 =======================================
 
 由於開發QT應用程式
