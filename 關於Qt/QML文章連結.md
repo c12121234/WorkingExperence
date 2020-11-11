@@ -45,4 +45,5 @@ https://www.twblogs.net/a/5c91aa62bd9eee35fc158342 **QML 使用Qt.rgba調整顏�
 
 https://blog.csdn.net/gongjianbo1992/article/details/103639353 **對item type截圖**
 
+https://stackoverflow.com/questions/28878533/how-to-create-a-window-without-a-title-bar-but-with-the-close-minimize-maximizie **使title bar消失**
 
